@@ -211,17 +211,8 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-<!--        <provider-->
-<!--            android:name="android.support.v4.content.FileProvider"-->
-<!--            android:authorities="${applicationId}.pluginFileProvider"-->
-<!--            android:grantUriPermissions="true"-->
-<!--            android:exported="false">-->
-<!--            <meta-data-->
-<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
-<!--                android:resource="@xml/file_paths" />-->
-<!--        </provider>-->
         <provider
-            android:name="androidx.core.content.FileProvider"
+            android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.pluginFileProvider"
             android:grantUriPermissions="true"
             android:exported="false">
@@ -229,6 +220,15 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="${applicationId}.pluginFileProvider"-->
+<!--            android:grantUriPermissions="true"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_paths" />-->
+<!--        </provider>-->
         <!--解决Not allowed to start service Intent-->
         <activity android:name="com.moziqi.compat.OActivity"
             android:excludeFromRecents="true"

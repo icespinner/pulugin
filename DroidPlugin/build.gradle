@@ -18,7 +18,7 @@ android {
     defaultConfig {
 
         def authorityName = rootProject.ext.authorityName
-        minSdkVersion 17
+        minSdkVersion 16
         versionCode 1
         versionName '1.0'
 
